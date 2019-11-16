@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CustomerDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="CustomerDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_user_list" ReturnType="Collection(CustomerDataModel.sp_user_list_Result)" />
+  </EntityContainer>
+  <ComplexType Name="sp_user_list_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Company" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="AccountStatus" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="RegistrationDate" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Photo" Nullable="true" />
+  </ComplexType>
+</Schema>

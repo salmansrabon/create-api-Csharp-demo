@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="CustomerDataModel" />
+  <Alias Key="Target" Value="CustomerDataModel.Store" />
+  <EntityContainerMapping CdmEntityContainer="CustomerDataModelContainer" StorageEntityContainer="CustomerDataModelStoreContainer">
+    <FunctionImportMapping FunctionImportName="sp_user_list" FunctionName="CustomerDataModel.Store.sp_user_list">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CustomerDataModel.sp_user_list_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="AccountStatus" ColumnName="AccountStatus" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
